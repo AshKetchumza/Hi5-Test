@@ -1,6 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="false">
   <ion-side-menu-content>
-    <ion-nav-bar class="bar-stable">
+    <ion-nav-bar class="bar-stable bar-pink">
       <ion-nav-back-button>
       </ion-nav-back-button>
 
@@ -13,15 +13,24 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
-    </ion-header-bar>
-    <ion-content>
+    <!-- <ion-header-bar class="bar-stable">
+      <h1 class="title"></h1>
+    </ion-header-bar> -->
+    <ion-content style="padding: 15px;">
+      <div class="row">
+        <div class="col"><img src="img/john.jpg" style="border-radius: 100px;" width="80"/></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col" style="font-size: 40px;"><i class="icon ion-android-hand placeholder-icon hi5"><b> 34</b></i></div>
+      </div>
+        <h4>John Smith</h4>
+        <h5 style="color: #5B5B5B;"><b>3</b> x High5s left to give for April</h5>
+        <h5 style="color: #5B5B5B;">You have <b>12</b> High5s</h5>
       <ion-list>
         <!-- <ion-item menu-close ng-click="login()">
           Login
         </ion-item> -->
-        <ion-item menu-close href="#/app/playlists">
+        <ion-item menu-close href="#/app/view">
           Hi5 Wall
         </ion-item>
         <ion-item menu-close href="#/app/browse">

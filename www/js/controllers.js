@@ -10,43 +10,63 @@ angular.module('starter.controllers', [])
   //});
 
   // Form data for the login modal
-  $scope.loginData = {};
+  // $scope.loginData = {};
 
-  // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
+
+  // Perform the login action when the user submits the login form
+  // $scope.doLogin = function() {
+  //   console.log('Doing login', $scope.loginData);
+
+    // Simulate a login delay. Remove this and replace with your login
+    // code if using a login system
+  //   $timeout(function() {
+  //     $scope.closeLogin();
+  //   }, 1000);
+  // };
+  // Create the success modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/success.html', {
     scope: $scope
   }).then(function(modal) {
     $scope.modal = modal;
   });
 
-  // Triggered in the login modal to close it
-  $scope.closeLogin = function() {
+  // Triggered in the success modal to close it
+  $scope.closeSuccess = function() {
     $scope.modal.hide();
   };
 
-  // Open the login modal
-  $scope.login = function() {
+  // Open the success modal
+  $scope.success = function() {
     $scope.modal.show();
   };
 
-  // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
-
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
 
 })
 
 .controller('View5sCtrl', function($scope) {
 })
 
-.controller('CreateCtrl', function($scope, $stateParams) {
+.controller('CreateCtrl', function($scope, $stateParams, $ionicModal) {
+  // Create the creating modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/creating.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  // Triggered in the creating modal to close it
+  $scope.closeCreate = function() {
+    $scope.modal.hide();
+  };
+
+  // Open the creating modal
+  $scope.create = function() {
+    $scope.modal.show();
+  };
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('CreatingCtrl', function($scope, $stateParams, $ionicModal) {
+})
+
+.controller('SuccessCtrl', function($scope, $stateParams) {
 });

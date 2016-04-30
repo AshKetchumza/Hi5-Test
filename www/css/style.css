@@ -1,9 +1,33 @@
-/* Empty. Add your own CSS if you like */
+/* Custom CSS */
+/*
+#success_bg {
+	background: #5dcddf;
+	background-size: cover;
+	background-position: 50% 0;
+}*/
+
+#success_bg {
+	background-image: url('../img/success.jpg');
+	background-size: cover;
+	background-position: 50% 0;
+}
+
 .button-pink {
   background-color: #eb7da2 !important;
   color: #fff !important;
   font-weight: 500 !important;
   font-size: 15px !important;
+}
+
+.button-success {
+  margin-bottom: -500px !important;
+  color: #fff !important;
+  background-color: #eb7da2 !important;
+}
+
+.button-give {
+  color: #eb7da2 !important;
+  font-weight: bold;
 }
 
 .bar-pink {
@@ -20,13 +44,23 @@
     color: #fff !important;
 }
 
+.h6 {
+  font-size: 16px !important;
+  font-weight: 900 !important;
+}
+
 .button-clear {
     color: #fff !important;
     background-color: #eb7da2 !important;
 }
 
+.button-block {
+  height: 10px !important;
+}
+
 .bar-footer {
   background-color: rgba(235, 125, 162, 0.0) !important;
+  margin-bottom: 10px !important;
 }
 
 ion-slide {
